@@ -3,7 +3,7 @@ using UdemyNLayerProject.Core.Models;
 
 namespace UdemyNLayerProject.Core.Repositories
 {
-    public interface IProductRepository
+    public interface IProductRepository:IRepository<Product>
     {
         Task<Product> GetWithCategoryByIdAsync(int productId);
     }
