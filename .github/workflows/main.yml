@@ -34,7 +34,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Restore NuGet packages
-        run: nuget restore UdemyNLayerProject/UdemyNLayerProject.sln
+        run: nuget restore UdemyNLayerProject.sln
         
       - name: Build the Solution
         run: msbuild UdemyNLayerProject/UdemyNLayerProject.sln /p:outdir=".\outproject\\" /p:Configuration=Release
