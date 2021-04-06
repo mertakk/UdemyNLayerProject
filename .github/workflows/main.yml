@@ -37,4 +37,4 @@ jobs:
         run: nuget restore UdemyNLayerProject.sln
         
       - name: Build the Solution
-        run: msbuild UdemyNLayerProject/UdemyNLayerProject.sln /p:outdir=".\outproject\\" /p:Configuration=Release
+        run: msbuild UdemyNLayerProject.sln /p:outdir=".\outproject\\" /p:Configuration=Release
