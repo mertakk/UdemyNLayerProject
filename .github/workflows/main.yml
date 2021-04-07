@@ -48,7 +48,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: created-artifact
-          path: ${{ github.workspace }}\Properties\outproject
+          path: ${{ github.workspace }}\UdemyNLayerProject.API\outproject
         
       - name: Download artifact 
         uses: actions/download-artifact@v2
