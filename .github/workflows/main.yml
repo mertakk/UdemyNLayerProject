@@ -38,3 +38,7 @@ jobs:
         
       - name: Build the Solution
         run: msbuild UdemyNLayerProject.sln /p:outdir=".\outproject\\" /p:Configuration=Release
+        
+      - name: deployment
+        run: |
+          ${{ github.workspace }}/.github/workflows/deploy.ps1
